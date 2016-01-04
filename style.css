@@ -1,0 +1,20 @@
+body {
+    font-family: 'Noto Sans CJK';
+    max-width: 640px;
+    min-width: 320px;
+    margin: 50px auto;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.4em;
+    color: #212121;
+    background-color; #FAFAFA;
+}
+
+a {
+    color: #212121;
+    text-decoration: underline;
+}
+
+hr {
+    clear: both;
+}
