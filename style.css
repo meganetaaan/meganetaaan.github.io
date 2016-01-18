@@ -1,5 +1,6 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
 body {
-    font-family: 'Noto Sans CJK';
+    font-family: 'Noto Sans Japanese', sans-serif;
     max-width: 640px;
     min-width: 320px;
     margin: 50px auto;
