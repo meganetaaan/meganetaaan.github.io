@@ -1,14 +1,26 @@
-@import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
+html {
+	font-size: 14px;
+}
 body {
-    font-family: 'Noto Sans Japanese', sans-serif;
-    max-width: 640px;
-    min-width: 320px;
-    margin: 50px auto;
+    width: 100%;
+    font-family: Quicksand, 游ゴシック体, 'Yu Gothic', YuGothic, 'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
     font-weight: normal;
-    font-size: 14px;
-    line-height: 1.4em;
+    font-size: 1em;
+    line-height: 1.3em;
     color: #212121;
     background-color; #FAFAFA;
+}
+
+.content {
+    width: 100%;
+}
+@media (min-width: 800px) {
+	.content {
+		width: 100%;
+		max-width: 640px;
+    	min-width: 320px;
+    	margin: 50px auto;
+	}
 }
 
 a {
