@@ -1,0 +1,81 @@
+html{
+  font-size: 14px;
+}
+@font-face {
+    font-family: 'lobster';
+    src: url('./Lobster-Regular_hototogis.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+  margin: 0px;
+  width: 100%;
+  font-family: Quicksand, 游ゴシック体, 'Yu Gothic', YuGothic, 'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+  font-weight: normal;
+  color: #212121;
+  background-color: #FAFAFA;
+}
+
+/* Header area */
+.header {
+  position: fixed;
+  width: 100%;
+  height: 50px;
+  background-color: #558B2F;
+}
+
+.app-name {
+  margin-top: 12px;
+  text-align: center;
+  font-family: lobster;
+  font-size: 1.5em;
+  color: #FAFAFA;
+}
+
+.content {
+  padding-top: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 800px;
+  width: 90%;
+  max-width: 1300px;
+}
+
+.main {
+  float: left;
+  width: 640px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.viewer {
+  width: 100%;
+  height: 360px;
+  background-color: #212121;
+}
+
+.comments {
+  width: 100%;
+  height: 320px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.26);
+}
+
+.side {
+  float: left;
+  min-width: 300px;
+  width: 30%;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.currentSlide {
+  height: 320px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.26);
+}
+
+.slides {
+  height: auto;
+  min-height: 320px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.26);
+}
