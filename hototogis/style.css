@@ -17,6 +17,11 @@ body {
   background-color: #FAFAFA;
 }
 
+video {
+  max-width: 100%;
+  height: auto;
+}
+
 /* Header area */
 .header {
   position: fixed;
@@ -49,9 +54,36 @@ body {
   padding-right: 5px;
 }
 
+.side {
+  overflow: hidden;
+  min-width: 100px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+@media screen and (max-width: 650px) {
+  .content {
+    padding-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    min-width: 320px;
+  }
+  .main {
+    width: 100%;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .side {
+    width: 100%;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+
 .viewer {
   width: 100%;
-  height: 360px;
   background-color: #212121;
 }
 
@@ -62,15 +94,8 @@ body {
   box-shadow: 0 2px 5px rgba(0,0,0,0.26);
 }
 
-.side {
-  overflow: hidden;
-  min-width: 100px;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
 .currentSlide {
-  height: 360px;
+  height: 325px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.26);
 }
 
