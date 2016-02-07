@@ -9,12 +9,17 @@ html{
 }
 
 body {
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  position: absolute;
   margin: 0px;
   width: 100%;
+  height: 100%;
   font-family: Quicksand, 游ゴシック体, 'Yu Gothic', YuGothic, 'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
   font-weight: normal;
   color: #212121;
-  background-color: #FAFAFA;
+  background-color: #;
 }
 
 video {
@@ -24,7 +29,6 @@ video {
 
 /* Header area */
 .header {
-  position: fixed;
   width: 100%;
   height: 50px;
   background-color: #558B2F;
@@ -39,69 +43,84 @@ video {
 }
 
 .content {
-  padding-top: 60px;
-  margin-left: auto;
-  margin-right: auto;
-  min-width: 800px;
+  flex: 1;
+  display: flex;
+  margin: 0 auto;
   width: 100%;
   max-width: 1300px;
+  height: 100%;
 }
 
 .main {
-  float: left;
-  width: 640px;
-  padding-left: 5px;
-  padding-right: 5px;
+  display: flex;
+  flex: 2;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  top: 50px;
+  max-width: 640px;
 }
 
 .side {
-  overflow: hidden;
-  min-width: 100px;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-@media screen and (max-width: 650px) {
-  .content {
-    padding-top: 60px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-    min-width: 320px;
-  }
-  .main {
-    width: 100%;
-    padding-left: 5px;
-    padding-right: 5px;
-  }
-
-  .side {
-    width: 100%;
-    padding-left: 5px;
-    padding-right: 5px;
-  }
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  top: 50px;
+  flex: 1;
 }
 
 .viewer {
   width: 100%;
+  height: auto;
   background-color: #212121;
 }
 
 .comments {
-  width: 100%;
-  min-height: 320px;
-  height: auto;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.26);
+  flex: 1;
 }
 
 .currentSlide {
   height: 325px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.26);
 }
 
 .slides {
-  height: auto;
-  min-height: 320px;
+  flex: 1;
+}
+
+@media screen and (max-width: 650px) {
+  .content {
+    flex: 1;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .main {
+  }
+
+  .side {
+  }
+
+  .viewer {
+    width: 100%;
+    height: auto;
+    background-color: #212121;
+  }
+
+  .comments {
+    flex: 1;
+  }
+
+  .currentSlide {
+    height: 325px;
+  }
+
+  .slides {
+    flex: 1;
+  }
+}
+
+.card {
+  margin: 5px;
+  padding 15px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.26);
-  margin-bottom: 5px;
 }
