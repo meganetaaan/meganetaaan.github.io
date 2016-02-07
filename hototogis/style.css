@@ -19,7 +19,7 @@ body {
   font-family: Quicksand, 游ゴシック体, 'Yu Gothic', YuGothic, 'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
   font-weight: normal;
   color: #212121;
-  background-color: #;
+  background-color: #F5F5F5;
 }
 
 video {
@@ -123,4 +123,5 @@ video {
   margin: 5px;
   padding 15px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.26);
+  background-color: #FAFAFA;
 }
