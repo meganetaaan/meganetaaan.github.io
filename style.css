@@ -3,6 +3,7 @@ html {
 }
 body {
     width: 100%;
+    margin: 0px;
     font-family: Quicksand, 游ゴシック体, 'Yu Gothic', YuGothic, 'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
     font-weight: normal;
     font-size: 1em;
@@ -12,13 +13,14 @@ body {
 }
 
 .content {
-    width: 100%;
+    width: 95%;
+    margin: auto;
 }
-@media (min-width: 800px) {
+
+@media (min-width: 640px) {
 	.content {
 		width: 100%;
 		max-width: 640px;
-    	min-width: 320px;
     	margin: 50px auto;
 	}
 }
@@ -29,5 +31,4 @@ a {
 }
 
 hr {
-    clear: both;
 }
