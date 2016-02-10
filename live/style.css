@@ -3,7 +3,7 @@ html{
 }
 @font-face {
     font-family: 'lobster';
-    src: url('./Lobster-Regular_hototogis.ttf') format('truetype');
+    src: url('./Lobster-Regular_live.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -19,7 +19,7 @@ body {
   font-family: Quicksand, 游ゴシック体, 'Yu Gothic', YuGothic, 'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
   font-weight: normal;
   color: #212121;
-  background-color: #F5F5F5;
+  background-color: #EEEEEE;
 }
 
 video {
@@ -31,8 +31,16 @@ video {
 .header {
   width: 100%;
   height: 50px;
-  background-color: #558B2F;
+  background-color: #E65100;
 }
+
+  .header>.menu-button {
+    position: absolute;
+    float: left;
+    margin-top: 12px;
+    padding: 2px;
+    color: #FAFAFA;
+  }
 
 .app-name {
   margin-top: 12px;
@@ -68,6 +76,10 @@ video {
   flex: 1;
 }
 
+.channel {
+  flex: 1;
+}
+
 .viewer {
   width: 100%;
   height: auto;
@@ -75,11 +87,7 @@ video {
 }
 
 .comments {
-  flex: 1;
-}
-
-.currentSlide {
-  height: 325px;
+  flex: 3;
 }
 
 .slides {
@@ -108,10 +116,6 @@ video {
 
   .comments {
     flex: 1;
-  }
-
-  .currentSlide {
-    height: 325px;
   }
 
   .slides {
