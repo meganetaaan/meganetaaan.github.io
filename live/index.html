@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,user-scalable=0">
+    <link rel="stylesheet" href="style.css" media="all">
+    <title>Five.fm</title>
+  </head>
+  <body>
+    <div class="header">
+      <div class="menu-button">
+        <a href="/">Top</a></div>
+      <div class="app-name">Five.fm</div>
+    </div>
+    <div class="content">
+      <div class="main">
+        <div class="viewer">
+    <video id="example_video_1" class="video-js vjs-default-skin" controls autoplay
+                    object-fit="contain" width="640" height="360" data-setup="{}">
+        <source src="../hls/test.m3u8" type="application/x-mpegURL" />
+    </video>
+        </div>
+        <div class="channel card">
+          <div class="channel-title"></div>
+          <div class="channel-timestamp"></div>
+          <div class="channel-description"></div>
+          <div class="channel-tag"></div>
+        </div>
+        <div class="comments card">
+        </div>
+      </div>
+      <div class="side">
+        <div class="slides card">
+        </div>
+      </div>
+    </div>
+    <div class="footer"></div>
+  </body>
+</html>

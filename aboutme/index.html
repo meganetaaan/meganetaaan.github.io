@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css" />
+    <style>
+      h3 {
+        padding-left: 1em; 
+      }
+      p {
+        padding-left: 2em;
+      }
+      .profile {
+        display: flex;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+      .summary {
+        flex: 7;
+      }
+      .photo {
+        flex: 2;
+      }
+      .photo>img{
+        width: 100%;
+        height: 100%;
+      }
+      @media (max-width: 640px) {
+        .profile {
+          display: flex;
+          -webkit-flex-direction: column;
+          -webkit-align-items: stretch;
+          align-items: stretch;
+        }
+      }
+    </style>
+    <title>meganetaaan's blog - About me</title>
+  </head>
+  <body>
+    <div class="content">
+      <div class="profile">
+        <div class="summary">
+          <h1>Shinya Ishikawa (meganetaaan)</h1>
+          Software Engineer interested in:
+          <ul>
+            <li>Enterprise Systems Engineering</li>
+            <li>Front-end Framework for Web Development</li>
+            <li>Human-Robot Interaction</li>
+          </ul>
+        </div>
+        <div class="photo">
+          <img src="../res/images/me.jpeg" alt="Shinya Ishikawa">
+        </div>
+      </div>
+      <hr/>
+      <h2>Work Experience</h2>
+      <h3>NS Solutions Corporation (R&D, April 2014 -)</h3>
+      <ul>
+        <li>Front-end Framework</li>
+        <li>Testing automation</li>
+      </ul>
+      <h3>Research Institute Japan Co.,Ltd.(Software Engineer, Part-time, September 2011 - March 2014)</h3>
+      <ul>
+        <li>Multi-modal dialogue system</li>
+        <li>Robotics(NAO/ Aldebaran)</li>
+      </ul>
+      <h2>Education</h2>
+      <h3>MS Computer Science Tokyo Institute of Technology (September 2013)</h3>
+      <ul>
+        <li>Multi-modal dialogue system</li>
+        <li>Pattern recognition</li>
+      </ul>
+      <h3>BS Computer Science Tokyo Institute of Technology (September 2011)</h3>
+      <ul>
+        <li>Multi-modal dialogue system</li>
+        <li>Natural language processing</li>
+      </ul>
+      <h2>Languages, Skills and Technologies</h2>
+      <ul>
+        <li>JavaScript, NodeJS, Java, Python, VBScript</li>
+        <li>React, hifive</li>
+        <li>Express(Node.js), Spring Boot, Struts</li>
+        <li>Oracle DB, MySQL, HSQLDB</li>
+        <li>Linux, Mac OS X, Windows, Naoqi</li>
+        <li>TOEIC score 900(2015)</li>
+      </ul>
+      <hr />
+      <footer>
+        <nav>
+          <a href="/index.html">back to top</a>
+        </nav>
+      </footer>
+    </div>
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-63038926-2', 'auto');
+    ga('send', 'pageview');
+    </script>
+  </body>
+</html>
