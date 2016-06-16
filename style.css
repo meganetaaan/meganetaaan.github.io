@@ -17,6 +17,10 @@ body {
     margin: auto;
 }
 
+footer {
+  margin-bottom: 1em;
+}
+
 @media (min-width: 640px) {
 	.content {
 		width: 100%;

@@ -11,19 +11,47 @@
       p {
         padding-left: 2em;
       }
+      .profile {
+        display: flex;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+      .summary {
+        flex: 7;
+      }
+      .photo {
+        flex: 2;
+      }
+      .photo>img{
+        width: 100%;
+        height: 100%;
+      }
+      @media (max-width: 640px) {
+        .profile {
+          display: flex;
+          -webkit-flex-direction: column;
+          -webkit-align-items: stretch;
+          align-items: stretch;
+        }
+      }
     </style>
     <title>meganetaaan's blog - About me</title>
   </head>
   <body>
     <div class="content">
       <div class="profile">
-      <h1>Shinya Ishikawa (meganetaaan)</h1>
-      Engineer interested in:
-      <ul>
-        <li>Enterprise Systems Engineering</li>
-        <li>Front-end Framework for Web Development</li>
-        <li>Human-Robot Interaction</li>
-      </ul>
+        <div class="summary">
+          <h1>Shinya Ishikawa (meganetaaan)</h1>
+          Software Engineer interested in:
+          <ul>
+            <li>Enterprise Systems Engineering</li>
+            <li>Front-end Framework for Web Development</li>
+            <li>Human-Robot Interaction</li>
+          </ul>
+        </div>
+        <div class="photo">
+          <img src="../res/images/me.jpeg" alt="Shinya Ishikawa">
+        </div>
       </div>
       <hr/>
       <h2>Work Experience</h2>
@@ -51,11 +79,18 @@
       <h2>Languages, Skills and Technologies</h2>
       <ul>
         <li>JavaScript, NodeJS, Java, Python, VBScript</li>
+        <li>React, hifive</li>
+        <li>Express(Node.js), Spring Boot, Struts</li>
+        <li>Oracle DB, MySQL, HSQLDB</li>
         <li>Linux, Mac OS X, Windows, Naoqi</li>
         <li>TOEIC score 900(2015)</li>
       </ul>
       <hr />
-      <a href="/index.html">back to top</a>
+      <footer>
+        <nav>
+          <a href="/index.html">back to top</a>
+        </nav>
+      </footer>
     </div>
   </body>
 </html>
