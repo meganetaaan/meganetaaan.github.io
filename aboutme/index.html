@@ -23,7 +23,7 @@
         flex: 7;
       }
       .photo {
-        flex: 2;
+        flex: 5;
       }
       .photo>img{
         width: 100%;
@@ -32,9 +32,10 @@
       @media (max-width: 640px) {
         .profile {
           display: flex;
+          flex-direction: column;
+          align-items: stretch;
           -webkit-flex-direction: column;
           -webkit-align-items: stretch;
-          align-items: stretch;
         }
       }
     </style>
@@ -45,26 +46,24 @@
       <div class="profile">
         <div class="summary">
           <h1>Shinya Ishikawa (meganetaaan)</h1>
-          Software Engineer interested in:
+          I am a software engineer interested in:
           <ul>
-            <li>Enterprise Systems Engineering</li>
-            <li>Front-end Framework for Web Development</li>
             <li>Human Machine Interface</li>
-            <li>Human-Robot Interaction</li>
+            <li>Human Robot Interaction</li>
+            <li>Front-end for Web Development</li>
+            <li>Enterprise Systems Engineering</li>
           </ul>
         </div>
         <div class="photo">
           <img src="../res/images/me.jpeg" alt="Shinya Ishikawa">
         </div>
       </div>
-      <hr/>
+      <hr />
       <h2>Work Experience</h2>
       <h3>NS Solutions Corporation (R&D, April 2014 -)</h3>
       <ul>
-        <li>Front-end Framework</li>
-        <li>Testing automation</li>
-        <li><a href="http://itpro.nikkeibp.co.jp/atcl/column/14/121100125/021700019/">HTML5で業務システムを構築しよう</a>(Serial publication on an IT news site)</li>
-        <li><a href="http://ec.nikkeibp.co.jp/item/books/254410.html">プロ直伝 業務システム開発のためのHTML5攻略ガイド</a></li>
+        <li>hifive: The web application platform especially for enterprise systems (<a href="https://github.com/hifive">GitHub</a>)</li>
+        <li>Pitalium: Testing automation library for multi-device regression tests (<a href="https://github.com/hifive/hifive-pitalium">GitHub</a>)</li>
       </ul>
       <h3>Honda Research Institute Japan Co.,Ltd.(Software Engineer, Part-time, September 2011 - March 2014)</h3>
       <ul>
@@ -82,11 +81,29 @@
         <li>Multi-modal dialogue system</li>
         <li>Natural language processing</li>
       </ul>
+      <h2>Publication</h2>
+      <ul>
+        <li><a href="https://booth.pm/ja/items/832185">悩めるSEを救う4つのすすめ</a></li>
+        <li><a href="http://ec.nikkeibp.co.jp/item/books/254410.html">プロ直伝 業務システム開発のためのHTML5攻略ガイド</a></li>
+        <li><a href="http://itpro.nikkeibp.co.jp/atcl/column/14/121100125/021700019/">HTML5で業務システムを構築しよう</a>(Serial publication on an IT news site)</li>
+        <li><a href="https://kaigi.org/jsai/webprogram/2013/paper-224.html">多人数対話ロボットの実現にむけたマルチモーダル対話データの収集と分析</a>(JSAI2013)</li>
+      </ul>
+      <h2>Presentation</h2>
+      <ul>
+        <li><a href="https://slides.com/meganetaaan/m5stack">M5Stack山盛り！Maker Faire Tokyo 2018に行ってきた</a>(M5Stack User Meeting Vol.3)</li>
+        <li><a href="https://slides.com/meganetaaan/deck">M5Stackで静かに音を鳴らす3つの方法</a>(M5Stack User Meeting Vol.2)</li>
+        <li><a href="https://slides.com/meganetaaan/m5stack-for-children">こどもにやさしいM5Stack</a>(M5Stack User Meeting Vol.1)</li>
+        <li><a href="https://www.slideshare.net/shimodanssol/5visual-testing-for-html5">5分でわかるVISUAL TESTING FOR HTML5</a>(HTML5 Conf 2017)</li>
+        <li><a href="https://www.slideshare.net/shimodanssol/seleniumconf16-uk">SeleniumConf16 UK参加報告</a>(Selenium勉強会)</li>
+        <li><a href="https://www.slideshare.net/shimodanssol/selenium-54768429">私がSeleniumを使ってスクリーンショットを撮るまでに出会った闇の全て</a>(OSC Tokyo 2015 Fall)</li>
+      </ul>
       <h2>Certification</h2>
       <ul>
-        <li>Database Specialist (2016)</li>
-        <li>Security Specialist (2017)</li>
         <li>Embedded Systems Specialist (2018)</li>
+        <li>Security Specialist (2017)</li>
+        <li>Database Specialist (2016)</li>
+        <li>Upper Intermediate English Skill, TOEIC score900 (2015)</li>
+        <li>Drivers License (2013)</li>
       </ul>
       <h2>Languages, Skills and Technologies</h2>
       <ul>
@@ -98,7 +115,20 @@
         <li>Moderate knowledge for Java, C++, Rust, Haskell, Python, Ruby</li>
         <li>Linux, MacOS, Windows, Naoqi</li>
         <li>Sensor programming using Arduino/Raspberry Pi</li>
-        <li>English (TOEIC score 900)</li>
+      </ul>
+      <hr />
+      <h2>Hobby</h2>
+      I love building a handy library.
+      <ul>
+        <li><a href="https://github.com/meganetaaan/m5stack-avatar">m5Stack-avatar</a> <a href="https://twitter.com/i/moments/1014083309767352320">(Used by many M5Stack fans)</a><iframe src="https://ghbtns.com/github-btn.html?user=meganetaaan&repo=m5stack-avatar&type=star&count=true" frameborder="0" scrolling="0" width="170px" height="20px"></iframe>
+</li>
+        <li><a href="https://github.com/meganetaaan/vue-maze">vue-maze</a><iframe src="https://ghbtns.com/github-btn.html?user=meganetaaan&repo=vue-maze&type=star&count=true" frameborder="0" scrolling="0" width="170px" height="20px"></iframe></li>
+        <li><a href="https://github.com/meganetaaan/vue-8-puzzle">vue-8-puzzle</a><iframe src="https://ghbtns.com/github-btn.html?user=meganetaaan&repo=vue-8-puzzle&type=star&count=true" frameborder="0" scrolling="0" width="170px" height="20px"></iframe></li>
+      </ul>
+      I love DIY-ing kawaii things.
+      <ul>
+        <li><a href="https://www.youtube.com/watch?v=sPZGOKU_QyY">Mai5 (maigo): The Talking Lost Child Alarm made with M5Stack</a></li>
+        <li><a href="https://www.youtube.com/watch?v=rwK5uhvwTL8">東工大レゴランド「素数チャレンジ」</a>(voice ui and prime number judgement part)</li>
       </ul>
       <hr />
       <footer>
