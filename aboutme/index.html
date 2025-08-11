@@ -184,5 +184,37 @@
 ga('create', 'UA-63038926-2', 'auto');
 ga('send', 'pageview');
     </script>
+  <script type="module">
+    import { follower } from 'https://cdn.jsdelivr.net/npm/@meganetaaan/mouse-follower/dist/index.js';
+
+    let lastFollower;
+    async function addMouseFollower() {
+      const f = lastFollower == null
+        ? follower()
+        : follower({ target: lastFollower })
+      await f.start();
+      lastFollower = f;
+    }
+
+    const keys = [];
+    const correct = [
+      "ArrowUp", "ArrowUp", "ArrowDown", "ArrowDown", "ArrowLeft", "ArrowRight", "ArrowLeft", "ArrowRight", "b", "a"
+    ];
+    document.addEventListener("DOMContentLoaded", async () => {
+      await addMouseFollower();
+    });
+    function kcommand(event) {
+      keys.push(event.key);
+      console.log(keys)
+      if (keys.length > correct.length) {
+        keys.shift();
+      }
+      if (keys.join("") === correct.join("")) {
+        addMouseFollower();
+        keys.length = 0; // reset keys
+      }
+    }
+    document.addEventListener("keyup", kcommand)
+  </script>
   </body>
 </html>
